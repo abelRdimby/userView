@@ -36,9 +36,10 @@ span{
         margin-block: 20px;
         transition: all 0.3s;
     }
-    svg:hover{
+    /* svg:hover{
         transform: scaleY(1.15);
-    }
+        background-color: rgb(200, 215, 228);
+    } */
 
 .myApp {
     width: 1000px;
@@ -84,7 +85,7 @@ span{
                     align-items: center;
                     background-color: rgb(0, 68, 255);
                     border-radius: 3px;
-                    margin-block: 30px;
+                    margin-block: 15px;
                 }
             }
         }

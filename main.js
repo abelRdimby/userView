@@ -17,5 +17,3 @@ data.forEach(function (element, index, array) {
     })  
   }       
 )
-
-
