@@ -1,4 +1,3 @@
-
   // var anana = 'maintso be mihintsy ';
   // console.log(anana)
 fetch("https://jsonplaceholder.typicode.com/users")
@@ -17,3 +16,4 @@ data.forEach(function (element, index, array) {
     })  
   }       
 )
+

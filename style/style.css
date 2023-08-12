@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.8s;
+    transition: all 0.8s ;
     font-family: sans-serif ,fantasy;
     letter-spacing: 0.5px;
     color: rgb(33, 26, 59);
@@ -25,21 +25,23 @@ h5  {
 }
 p  {
         padding: 0;
+        color: rgb(0, 68, 255);
 }
 span{
         padding: 0;
         font-weight: 300;
-        color: rgb(0, 68, 255);
+        color: white;
     }
     svg {
-        color: rgb(0, 68, 255);
+        color: white;
         margin-block: 20px;
+        margin-top: 0;
         transition: all 0.3s;
     }
-    /* svg:hover{
+    svg:hover{
         transform: scaleY(1.15);
-        background-color: rgb(200, 215, 228);
-    } */
+        /* background-color: rgb(200, 215, 228); */
+    }
 
 .myApp {
     width: 1000px;
@@ -51,44 +53,80 @@ span{
     justify-content: center;
 
     .blockShower {
-        width: 1000px;
+        width: 1015px;
         padding-inline: 15px 0;
         border-radius: 10px 3px 10px 10px;
         background-color:  white;
         /* text-align: right; */
         margin-bottom: 18px;
+        position: relative;
+
     }
     .userBlock {
         width: 1015px;
         padding-inline: 15px 0;
-        border-radius: 3px 10px 10px 10px;
+        border-radius: 3px 10px 3px 10px;
         background-color:  white;
+        color: rgb(0, 68, 255);
+
         /* margin-bottom: 18px; */
+        .column {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            border-radius: 3px 0 0 10px;
+        }
+
     }
+
     .users {
-        width: 99%;
+        width: 1015px;
         margin-bottom: 18px;
         display: flex;
         flex-direction: row;
+        background-color:  white;
+        color: rgb(0, 68, 255);
 
-        .outils {
-            width: 50px;
-            /* background-color: red; */
-            display: flex;
-            flex-direction: column;
-            a {
-                div {
-                    width: 50px;
-                    height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: rgb(0, 68, 255);
-                    border-radius: 3px;
-                    margin-block: 15px;
-                }
-            }
+        p {
+            color: rgb(0, 68, 255);
         }
     }
+    .outils {
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+        margin-top: 0;
+        position: absolute;
+        right: -70px;
+        top: 0px;
+    }
+    .useradd {
+        width: 1015px;
+        height: 350px;
+        padding-inline: 15px 0;
+        border-radius: 3px 10px 3px 10px;
+        background-color:  white;
+        color: rgb(0, 68, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .inputValue{
+            width: 300px;
+            height: 30px;
+            border-radius: 10px;
+            border: white solid 1px;
+            background-color: rgb(0, 68, 255);
+            color: white;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            padding: 5px;
+        }
+    }
+    
+
+    
 }
 
