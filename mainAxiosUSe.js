@@ -19,9 +19,9 @@ axios.get('https://jsonplaceholder.typicode.com/users')
 const block = document.querySelector('#block')
  const homeSection = document.querySelector('.myApp')
 const addUserBtn = document.getElementById('addUserBtn')
-const nameInput =document.getElementById('name')
-const usernameInput =document.getElementById('username')
-const emailInput =document.getElementById('email')
+let nameInput =document.getElementById('name')
+let usernameInput =document.getElementById('username')
+let emailInput =document.getElementById('email')
 addUserBtn.addEventListener('click', removeElement);
 
 function removeElement() {
@@ -30,20 +30,22 @@ function removeElement() {
     block.remove()  
     document.getElementById('myApp').innerHTML += `
     <div class="useradd" id="signUp">
-            <input class="inputValue" type="text" id="name">
-            <input class="inputValue" type="text" id="username">
-            <input class="inputValue" type="email" id="email">
-            <button id="addUSerSubmit" type="submit">Submite</button>
-            
-        </div>
+        <form class="myForm">
+            <input class="inputValue" type="text" id="name" placeholder="Your name">
+            <input class="inputValue" type="text" id="username" placeholder="Your username">
+            <input class="inputValue" type="email" id="email" placeholder="Your email">
+            <input type="submit" value="submit">
+        </form>
+    </div>
     ` 
 }
+const form = document.getElementsByClassName(".myForm")
 
-
+console.log(form)
 addUserBtn.addEventListener('click', (e) =>{
     
     axios.post("https://jsonplaceholder.typicode.com/users",{
-      name: name.value,
+      name: nameInput,
       username: username.value,
       email: email.value
     })
@@ -53,5 +55,7 @@ addUserBtn.addEventListener('click', (e) =>{
         console.log(error);
     })
 })
+
+
 
 
