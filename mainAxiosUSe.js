@@ -1,5 +1,8 @@
+// import axios from 'axios';
 
-axios.get('https://jsonplaceholder.typicode.com/users')
+getData();
+function getData() {
+    axios.get('https://jsonplaceholder.typicode.com/users')
  .then((response) => {
     response.data.forEach(function (element, index, array){
         // console.log(element)
@@ -12,49 +15,74 @@ axios.get('https://jsonplaceholder.typicode.com/users')
         `
     });
  })
- 
  .catch((error) => console.log(error));
-
-
+}
 const block = document.querySelector('#block')
- const homeSection = document.querySelector('.myApp')
+const App = document.getElementById('myApp')
+const modifBtn = document.getElementById('modif')
+function removeElement() {
+    block.remove()  
+    addNewBlock()
+    console.log('voafafa')
+}
+
+function createElement() {
+    const myBlock = document.createElement('div')
+    myBlock.classList.add('userBlock')
+    document.append.append(myBlock)
+    console.log('misia')
+}
+modifBtn.addEventListener('click',createElement)
+function addNewBlock() {
+    const title = document.getElementById('myTitle').innerHTML ='Add a new users ?'
+    document.getElementById('myApp').innerHTML += `
+        <div class="useradd" id="signUp" style="transition: all 0.9s;">
+            <form class="myForm" id="myForm" method="POST">
+                <input class="inputValue" type="text" id="name" placeholder="Your name">
+                <input class="inputValue" type="text" id="username" placeholder="Your username">
+                <input class="inputValue" type="email" id="email" placeholder="Your email">
+                <input type="submit" value="submit">
+            </form>
+        </div>
+     ` 
+}
 const addUserBtn = document.getElementById('addUserBtn')
+addUserBtn.addEventListener('click', function(){
+    removeElement()
+});
+
+
 let nameInput =document.getElementById('name')
 let usernameInput =document.getElementById('username')
 let emailInput =document.getElementById('email')
-addUserBtn.addEventListener('click', removeElement);
+let addUserForms = document.getElementById("myForm");
 
-function removeElement() {
-    const title = document.getElementById('myTitle').innerHTML ='Add a new users ?'
-    console.log(title)
-    block.remove()  
-    document.getElementById('myApp').innerHTML += `
-    <div class="useradd" id="signUp">
-        <form class="myForm">
-            <input class="inputValue" type="text" id="name" placeholder="Your name">
-            <input class="inputValue" type="text" id="username" placeholder="Your username">
-            <input class="inputValue" type="email" id="email" placeholder="Your email">
-            <input type="submit" value="submit">
-        </form>
-    </div>
-    ` 
-}
-const form = document.getElementsByClassName(".myForm")
+addUserForms.addEventListener('submit', function(e) {
+    e.preventDefault();
+    sendData();
+    console.log('coucou');
 
-console.log(form)
-addUserBtn.addEventListener('click', (e) =>{
-    
-    axios.post("https://jsonplaceholder.typicode.com/users",{
-      name: nameInput,
-      username: username.value,
-      email: email.value
-    })
-    .then((response) => {
-        console.log(response.data);
-      }, (error) => {
-        console.log(error);
-    })
-})
+    const sendData = (data) =>{
+        axios.post('https://jsonplaceholder.typicode.com/users', data)
+        .then(response =>{
+            console.log(response)   
+        })
+        .catch(error =>{
+            console.log(error)
+            getData()
+            createElement()
+        })
+    }
+});
+
+
+
+
+
+
+
+
+
 
 
 
