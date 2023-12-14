@@ -1,65 +1,41 @@
 {
     "users": [
       {
+        "id": 1,
         "firstname": "Anarana ",
         "lastname": "Fanampiny",
-        "email": "email@test.com",
-        "role": "Developer",
-        "skills": [
-          "HTML",
-          "Angular"
-        ],
-        "expTitle": "lorem lavalavallavalaalavaa",
-        "expDesc": "lorem lavalavallavalaalavaa mbola miampy",
-        "expDate": [
-          "21/03/23 17:00",
-          "21/03/23 17:00"
-        ],
-        "age": "55",
-        "id": 1
+        "email": "email@test.com"
       },
       {
-        "firstname": "",
-        "lastname": "",
-        "email": "",
-        "role": "",
-        "skills": [
-          "css",
-          "html"
-        ],
-        "expTitle": "",
-        "expDesc": "",
-        "expDate": [],
-        "id": 2
+        "id": 2,
+        "firstname": "Anarana ",
+        "lastname": "Fanampiny",
+        "email": "email@test.com"
       },
       {
-        "firstname": "",
-        "lastname": "",
-        "email": "",
-        "role": "",
-        "skills": [
-          "Skills"
-        ],
-        "expTitle": "blobloblblo",
-        "expDesc": "blablablabalblolbo",
-        "expDate": [],
-        "id": 3
+        "id": 3,
+        "firstname": "Anarana ",
+        "lastname": "Fanampiny",
+        "email": "email@test.com"
       },
       {
-        "firstname": "",
-        "lastname": "",
-        "email": "",
-        "role": "",
-        "skills": [
-          "adadadadad"
-        ],
-        "expTitle": "adadadadadadadadad",
-        "expDesc": "dadadad",
-        "expDate": [
-          "adadad",
-          " "
-        ],
-        "id": 4
+        "id": 4,
+        "firstname": "Anarana ",
+        "lastname": "Fanampiny",
+        "email": "email@test.com"
+      },
+      {
+        "id": 5,
+        "firstname": "Anarana ",
+        "lastname": "Fanampiny",
+        "email": "email@test.com"
+      },
+      {
+        "id": 6,
+        "firstname": "Anarana ",
+        "lastname": "Fanampiny",
+        "email": "email@test.com"
       }
+      
     ]
   }

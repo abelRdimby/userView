@@ -3,6 +3,7 @@
     --background-black: black;
     --background-black-grey: #6C6565;
     --background-grey: #EBEBEB;
+    --background-grey-dark: #c9bdb7;
     --background-black-orange: #815139;
 }
 
@@ -31,6 +32,21 @@ body {
     margin-block: 5px;
     border-radius: 5px;
     padding: 5px 10px 5px;
+    transition: 0.3s;
+}
+.table:hover{
+    background-color: var(--background-grey-dark);
+    .imageAvatar{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .imageAvatar>img{
+        width: 40px;
+        height: 40px;
+    }
+    
 }
 
 
@@ -110,8 +126,10 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.1s ease-in;
 }
 .imageAvatar>img{
     width: 35px;
     height: 35px;
+    transition: 0.1s ease-in;
 }
