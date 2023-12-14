@@ -2,16 +2,21 @@
 
 getData();
 function getData() {
-    axios.get('https://jsonplaceholder.typicode.com/users')
+    axios.get(
+        'https://jsonplaceholder.typicode.com/users'
+        )
  .then((response) => {
     response.data.forEach(function (element, index, array){
         // console.log(element)
         document.getElementById('tableau').innerHTML += `
-        <tr>
-            <th style="text-align: left"><p>${element.name}</p></th>
-            <th style="text-align: left"><p>${element.username}</p></th>
-            <th style="text-align: left"><p>${element.email}</p></th>
-        </tr>
+
+        
+        <div class="table">
+            <p id="username">${element.username}</p>
+            <p id="name">${element.name}</p>
+            <img src="src/img/Avatar.png" alt="" class="avatarStyle">
+            <p id="email">${element.email}</p>
+        </div>
         `
     });
  })
