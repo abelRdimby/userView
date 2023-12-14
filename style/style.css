@@ -4,9 +4,17 @@
     --background-black-grey: #6C6565;
     --background-grey: #EBEBEB;
     --background-grey-dark: #c9bdb7;
-    --background-black-orange: #815139;
+    --background-black-orange: #573829;
+    --transition-03s: 0.3s;
+    --transition-05s: 0.5s;
 }
-
+*{
+    font-family: 'Afacad', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    outline-style: none;
+    outline-color: none;
+}
 body {
     background-color: var(--background-white);
     width: 100%;
@@ -20,9 +28,11 @@ body {
     font-family: sans-serif ,fantasy;
     letter-spacing: 0.5px;
     color: rgb(33, 26, 59);
+    transition: 3s ease-in-out;
 }
 .table{
     width: 600px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -32,7 +42,7 @@ body {
     margin-block: 5px;
     border-radius: 5px;
     padding: 5px 10px 5px;
-    transition: 0.3s;
+    transition: var(--transition-05s);
 }
 .table:hover{
     background-color: var(--background-grey-dark);
@@ -62,7 +72,7 @@ h5  {
 }
 p  {
         padding: 0;
-        margin: 5px;
+        margin: 0;
 }
 
 /* 
@@ -85,7 +95,7 @@ span{
 
 .nameBlock{
     display: flex;
-    height: 40px;
+    height: 30px;
     margin: 0;
     flex-direction: row;
     align-items: center;
@@ -100,17 +110,16 @@ span{
 }
 
 #name{
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: lighter;
     color: var(--background-black-orange);
     margin-left: 15px;
     margin-block: 0;
     padding: 0;
-    margin-left: 0;
 }
 
 #email{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     color: var(---background-black-grey);
     margin-top: 0;
