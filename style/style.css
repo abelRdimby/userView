@@ -1,6 +1,9 @@
 :root{
     --background-white: rgb(255, 255, 255);
     --background-black: black;
+    --background-black-grey: #6C6565;
+    --background-grey: #EBEBEB;
+    --background-black-orange: #815139;
 }
 
 body {
@@ -18,22 +21,21 @@ body {
     color: rgb(33, 26, 59);
 }
 .table{
-    background-color: red;
-    width: 500px;
+    width: 600px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--background-grey);
+    margin-block: 5px;
+    border-radius: 5px;
+    padding: 5px 10px 5px;
 }
-.avatarStyle{
-    width: 40px;
-    height: 40px;
-    right: 0;
-}
-/* 
+
+
 h1  {
         padding: 0;
-        color: rgb(0, 68, 255);
     }
 h3  {
         padding: 0;
@@ -44,8 +46,10 @@ h5  {
 }
 p  {
         padding: 0;
-        color: rgb(0, 68, 255);
+        margin: 5px;
 }
+
+/* 
 span{
         padding: 0;
         font-weight: 300;
@@ -59,26 +63,55 @@ span{
     }
     svg:hover{
         transform: scaleY(1.15);
-        /* background-color: rgb(200, 215, 228); */
+        background-color: rgb(200, 215, 228); 
     }
+    */
 
-
+.nameBlock{
+    display: flex;
+    height: 40px;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+}
 
 #username{
     font-size: 22px;
-    font-weight: 500;
-    color: var(--background-black);
+    font-weight: normal;
+    color: var(--background-black-orange);
+    margin-block: 0;
+    margin-left: 0;
 }
 
 #name{
     font-size: 18px;
     font-weight: 500;
-    color: var(--background-black);
+    color: var(--background-black-orange);
+    margin-left: 15px;
+    margin-block: 0;
+    padding: 0;
+    margin-left: 0;
 }
 
 #email{
     font-size: 12px;
-    font-weight: 500;
-    color: var(--background-black);
+    font-weight: normal;
+    color: var(---background-black-grey);
+    margin-top: 0;
 }
-
+.imageAvatar{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--background-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageAvatar>img{
+    width: 35px;
+    height: 35px;
+}

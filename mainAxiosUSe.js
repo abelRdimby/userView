@@ -12,10 +12,17 @@ function getData() {
 
         
         <div class="table">
-            <p id="username">${element.username}</p>
-            <p id="name">${element.name}</p>
-            <img src="src/img/Avatar.png" alt="" class="avatarStyle">
-            <p id="email">${element.email}</p>
+            <div class="nameBlock">
+                <p id="username">${element.username}</p>
+                <p id="name">${element.name}</p>
+            </div>
+            <div class="imageAvatar">
+                <img src="src/img/Avatar.png" alt="">
+            </div>
+            <div class="email">
+                <p id="email">${element.email}</p>
+            </div>
+            
         </div>
         `
     });
