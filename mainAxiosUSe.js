@@ -13,12 +13,13 @@ function getData() {
 
         
         <div class="table">
+        <div class="point"></div>
             <div class="nameBlock">
                 <p id="username">${element.firstname}</p>
                 <p id="name">${element.lastname}</p>
             </div>
             <div class="imageAvatar">
-                <img src="src/img/Avatar.png" alt="">
+                <img src="${element.image}" alt="">
             </div>
             <div class="email">
                 <p id="email">${element.email}</p>

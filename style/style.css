@@ -3,9 +3,9 @@
     --background-black: black;
     --background-black-grey: #6C6565;
     --background-grey: #EBEBEB;
-    --background-grey-dark: #c9bdb7;
+    --background-grey-dark: #e9e0cd;
     --background-black-orange: #573829;
-    --transition-03s: 0.3s;
+    --transition-03s: 0.3s ease-in-out;
     --transition-05s: 0.5s;
 }
 *{
@@ -44,20 +44,35 @@ body {
     padding: 5px 10px 5px;
     transition: var(--transition-05s);
 }
+.table>.point{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--background-black-grey);
+    position: absolute;
+    left: -20px;
+    top: 30px;
+    transition: var(--transition-03s);
+}
 .table:hover{
     background-color: var(--background-grey-dark);
-    .imageAvatar{
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
     .imageAvatar>img{
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 25px;
+    }
+    .point{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: var(--background-grey-dark);
+        position: absolute;
+        left: -20px;
+        top: 30px;
+        transition: var(--transition-03s);
     }
     
 }
+
 
 
 h1  {
@@ -126,19 +141,18 @@ span{
 }
 .imageAvatar{
     position: absolute;
-    right: -10px;
-    top: -10px;
-    width: 40px;
-    height: 40px;
+    right: 20px;
+    top: 20px;
     border-radius: 50%;
-    background-color: var(--background-white);
+    /* background-color: var(--background-white); */
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.1s ease-in;
 }
 .imageAvatar>img{
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
     transition: 0.1s ease-in;
+    border-radius: 50%;
 }
