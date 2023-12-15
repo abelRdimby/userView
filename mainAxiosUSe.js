@@ -1,14 +1,13 @@
 // import axios from 'axios'
 
+var url = "http://localhost:3000/users"
 getData();
 function getData() {
-    axios.get(
-        'http://localhost:3000/users'
-        )
+    axios.get(url)
  .then((response) => {
-    console.log(response.data)
+    // console.log(response.data)
     response.data.forEach(function (element, index, array){
-        console.log(element,  )
+        // console.log(element)
         document.getElementById('tableau').innerHTML += `
 
         
