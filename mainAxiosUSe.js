@@ -1,4 +1,4 @@
-// import axios from 'axios';
+// import axios from 'axios'
 
 getData();
 function getData() {
@@ -8,7 +8,7 @@ function getData() {
  .then((response) => {
     console.log(response.data)
     response.data.forEach(function (element, index, array){
-        console.log(element, index)
+        console.log(element,  )
         document.getElementById('tableau').innerHTML += `
 
         
