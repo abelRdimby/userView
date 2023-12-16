@@ -9,8 +9,7 @@
     --transition-05s: 0.5s;
 }
 *{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
+    font-family: 'Nexa', sans-serif;
     text-decoration: none;
     outline-style: none;
     outline-color: none;
@@ -25,18 +24,16 @@ body {
     justify-content: center;
     align-items: center;
     transition: all 1.8s ;
-    font-family: sans-serif ,fantasy;
     letter-spacing: 0.5px;
     color: rgb(33, 26, 59);
     transition: 3s ease-in-out;
 }
 .table{
-    width: 600px;
-    height: 50px;
+    width: 900px;
+    height: 25px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     position: relative;
     background-color: var(--background-grey);
     margin-block: 5px;
@@ -73,18 +70,6 @@ body {
     
 }
 
-
-
-h1  {
-        padding: 0;
-    }
-h3  {
-        padding: 0;
-    }
-h5  {
-        padding: 0;
-        margin: 5px;
-}
 p  {
         padding: 0;
         margin: 0;
@@ -111,13 +96,14 @@ span{
 .nameBlock{
     display: flex;
     height: 30px;
+    width: 60%;
     margin: 0;
     flex-direction: row;
     align-items: center;
 }
 
 #username{
-    font-size: 22px;
+    font-size: 14px;
     font-weight: normal;
     color: var(--background-black-orange);
     margin-block: 0;
@@ -125,12 +111,16 @@ span{
 }
 
 #name{
-    font-size: 24px;
+    font-size: 16px;
     font-weight: lighter;
     color: var(--background-black-orange);
     margin-left: 15px;
     margin-block: 0;
     padding: 0;
+}
+.email{
+    text-align: right;
+    width: 300px;
 }
 
 #email{
@@ -142,7 +132,6 @@ span{
 .imageAvatar{
     position: absolute;
     right: 20px;
-    top: 20px;
     border-radius: 50%;
     /* background-color: var(--background-white); */
     display: flex;
