@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Anarana ",
+      "lastname": "Fanampiny",
+      "email": "email@test.com",
+      "image": "src/img/AvatarGirl.png"
+    },
+    {
+      "id": 2,
+      "firstname": "Anarana ",
+      "lastname": "Fanampiny",
+      "email": "email@test.com",
+      "image": "src/img/Avatar.png"
+    },
+    {
+      "id": 3,
+      "firstname": "Anarana ",
+      "lastname": "Fanampiny",
+      "email": "email@test.com",
+      "image": "src/img/img_avatar.png"
+    },
+    {
+      "id": 4,
+      "firstname": "Anarana ",
+      "lastname": "Fanampiny",
+      "email": "email@test.com",
+      "image": "src/img/img_avatar2.png"
+    },
+    {
+      "id": 5,
+      "firstname": "Anarana ",
+      "lastname": "Fanampiny",
+      "email": "email@test.com",
+      "image": "src/img/Avatar.png"
+    },
+    {
+      "id": 6,
+      "firstname": "Anarana ",
+      "lastname": "Fanampiny",
+      "email": "email@test.com",
+      "image": "src/img/AvatarGirl.png"
+    }
+  ]
+}
